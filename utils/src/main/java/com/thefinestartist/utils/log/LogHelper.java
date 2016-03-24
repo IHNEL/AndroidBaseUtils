@@ -467,70 +467,70 @@ public class LogHelper {
 
     // Printing
     private void log(LogLevel logLevel, byte message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         printLog(logLevel, String.valueOf(message));
     }
 
     private void log(LogLevel logLevel, char message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         printLog(logLevel, String.valueOf(message));
     }
 
     private void log(LogLevel logLevel, short message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         printLog(logLevel, String.valueOf(message));
     }
 
     private void log(LogLevel logLevel, int message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         printLog(logLevel, String.valueOf(message));
     }
 
     private void log(LogLevel logLevel, long message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         printLog(logLevel, String.valueOf(message));
     }
 
     private void log(LogLevel logLevel, float message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         printLog(logLevel, String.valueOf(message));
     }
 
     private void log(LogLevel logLevel, double message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         printLog(logLevel, String.valueOf(message));
     }
 
     private void log(LogLevel logLevel, boolean message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         printLog(logLevel, String.valueOf(message));
     }
 
     private void log(LogLevel logLevel, String message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         printLog(logLevel, message);
     }
 
     private void log(LogLevel logLevel, JSONObject message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         try {
@@ -541,7 +541,7 @@ public class LogHelper {
     }
 
     private void log(LogLevel logLevel, JSONArray message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         try {
@@ -552,7 +552,7 @@ public class LogHelper {
     }
 
     private void log(LogLevel logLevel, Exception message) {
-        if (logLevel.ordinal() < settings.getLogLevel().ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         StringBuilder builder = new StringBuilder();
@@ -577,7 +577,7 @@ public class LogHelper {
     }
 
     private void log(LogLevel logLevel, Object message) {
-        if (logLevel.ordinal() < logLevel.ordinal())
+        if (settings.getLogLevel().ordinal() < logLevel.ordinal())
             return;
 
         String log;
